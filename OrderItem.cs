@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hotel_Management_System
 {
-    internal class Program
+    internal class OrderItem
     {
-        
     }
 }

@@ -8,5 +8,22 @@ namespace Hotel_Management_System
 {
     internal class OrderItem
     {
+        public Menu Menu { get; set; }
+        public int Quantity { get; set; }
+
+        public OrderItem(Menu menu, int quantity)
+        {
+            Menu = menu;
+            Quantity = quantity;
+        }
+
+        public double GetTotalPrice()
+        {
+            return Menu.Price * Quantity;
+        }
+        public override string ToString()
+        {
+            return $"{Menu}: {Quantity}";
+        }
     }
 }
